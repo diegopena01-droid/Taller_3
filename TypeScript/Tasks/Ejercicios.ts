@@ -92,6 +92,31 @@ for (const booleano of booleanos) {
  * - Imprime ambos productos.
  */
 
+console.log("======== EJERCICIO 3 - Crear un Type ========");
+
+type Producto = {
+    id: number;
+    nombre: string;
+    precio: number;
+    disponible: boolean;
+};
+
+const producto1: Producto = {
+    id: 1,
+    nombre: "Laptop",
+    precio: 2000000,
+    disponible: true,
+};
+
+const producto2: Producto = {
+    id: 2,
+    nombre: "Mouse",
+    precio: 100000,
+    disponible: false,
+};
+
+console.log("Producto 1:", producto1);
+console.log("Producto 2:", producto2);
 
 /**
  * TODO: EJERCICIO 4 - Interfaces
