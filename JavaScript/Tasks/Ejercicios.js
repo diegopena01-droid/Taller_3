@@ -272,6 +272,7 @@ console.log("Tarjeta Gráfica: ", tarjetaGrafica);
  *  - Crear un nuevo arreglo agregando la propiedad estado, cuyo valor será "Aprobó" o "Reprobó" según la nota.
  *  - Realizar una copia del arreglo utilizando el operador Spread.
  */
+console.log("==========EJERCICIO 10===========");
 
 const estudiantes2 = [
     {
@@ -299,3 +300,28 @@ const estudiantes2 = [
         edad: 19
     }
 ];
+
+const estudiantesAprobados = estudiantes2.filter(estudiante => estudiante.nota >= 3.0);
+console.log("Estudiantes aprobados: ", estudiantesAprobados);
+const estudiantesMayoresEdad = estudiantes2.filter(estudiante => estudiante.edad >= 18);
+console.log("Estudiantes mayores de edad: ", estudiantesMayoresEdad);
+const nombresEstudiantes = estudiantes2.map(estudiante => estudiante.nombre);
+console.log("Nombres de estudiantes: ", nombresEstudiantes);
+
+
+const estudianteId3 = estudiantes2.find(estudiante => estudiante.id === 3)
+console.log("Estudiante con id 3: ", estudianteId3);
+const promedioNotas = estudiantes2.reduce((total, estudiante) => total + estudiante.nota, 0) / estudiantes2.length;
+console.log("Promedio de notas: ", promedioNotas);
+
+const estudianteNotaMasAlta = estudiantes2.reduce((max, estudiante) => (estudiante.nota > max.nota ? estudiante : max));
+console.log("Estudiante con nota más alta: ", estudianteNotaMasAlta);
+
+const estudiantesConEstado = estudiantes2.map(estudiante => ({
+    ...estudiante,
+    estado: estudiante.nota >= 3.0 ? "Aprobó" : "Reprobó"
+}));
+console.log("Estudiantes con estado: ", estudiantesConEstado);
+
+const copiaEstudiantes = [...estudiantes2];
+console.log("Copia del arreglo de estudiantes: ", copiaEstudiantes);
