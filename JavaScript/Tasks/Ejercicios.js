@@ -134,7 +134,19 @@ console.log(empleadosFiltrados);
  *  - Venta más alta (Math.max investigar).
  *  - Promedio de ventas.
  */
+
+console.log("==========EJERCICIO 6===========");
+
+
 const ventas = [250, 400, 150, 600, 800];
+const totalVendido = ventas.reduce((total, venta) => total + venta  , 0);
+const ventaMasAlta = Math.max(...ventas);
+const promedioVentas = totalVendido / ventas.length;
+
+console.log("Total vendido: " + totalVendido);      
+console.log("Venta más alta: " + ventaMasAlta);
+console.log("Promedio de ventas: " + promedioVentas);
+
 
 /**
  * TODO: EJERCICIO 7 - Catálogo de Libros
