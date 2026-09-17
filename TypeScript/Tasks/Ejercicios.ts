@@ -279,8 +279,30 @@ vehiculo2.mostrarInformacion();
  * Finalmente crea un estudiante
  * e imprime toda su información.
  */
+console.log("==========EJERCICIO 8===========");
 
+    class Persona{
+        nombre:string;
+        edad: number;
 
+        constructor(nombre: string, edad: number){
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+    }
+
+    class Estudiante extends Persona{
+        carrera: string;
+
+        constructor(nombre: string, edad: number, carrera: string){
+            super(nombre, edad);
+            this.carrera = carrera;
+        }
+    }
+    const estudiante = new Estudiante("Diego Peña", 21, "ingenieria de sistemas");
+
+    console.log(estudiante);
+    
 /**
  * TODO: EJERCICIO 9 - Generics
  *
