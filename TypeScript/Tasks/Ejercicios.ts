@@ -20,6 +20,8 @@
  * - Ej: console.log(variable, typeof variable)
  */
 
+console.log("======== EJERCICIO 1 - Tipos Básicos ========");
+
 const nombre: string = "Alvarito";
 const edad: number = 25;
 const salario: number = 1500000;
@@ -48,6 +50,31 @@ console.log(ciudad, typeof ciudad);
  * - Recorre cada arreglo utilizando for...of.
  */
 
+console.log("======== EJERCICIO 2 - Arrays Tipados ========");
+
+const numeros: number[] = [1, 2, 3, 4, 5];
+const strings: string[] = ["Hola", "Mundo", "TypeScript"];
+const booleanos: boolean[] = [true, false, true];
+
+numeros.push(6);
+strings.push("Adiós");
+booleanos.push(false);
+
+numeros.pop();
+strings.pop();
+booleanos.pop();
+
+for (const numero of numeros) {
+  console.log("Número:", numero);
+}
+
+for (const string of strings) {
+  console.log("String:", string);
+}
+
+for (const booleano of booleanos) {
+  console.log("Booleano:", booleano);
+}
 
 /**
  * TODO: EJERCICIO 3 - Crear un Type
