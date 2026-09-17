@@ -20,6 +20,17 @@
  * - Ej: console.log(variable, typeof variable)
  */
 
+const nombre: string = "Alvarito";
+const edad: number = 25;
+const salario: number = 1500000;
+const estaActivo: boolean = true;
+const ciudad: string = "Tulua";
+
+console.log(nombre, typeof nombre);
+console.log(edad, typeof edad);
+console.log(salario, typeof salario);
+console.log(estaActivo, typeof estaActivo);
+console.log(ciudad, typeof ciudad);
 
 /**
  * TODO: EJERCICIO 2 - Arrays Tipados
