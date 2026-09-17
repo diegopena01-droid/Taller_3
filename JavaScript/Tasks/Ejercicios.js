@@ -7,6 +7,34 @@
  * Ejemplo: calculadora(10, 5, "+"); -> Resultado esperado: 15 
  */
 
+function calculadora(num1, num2, operador) {
+
+    switch (operador) {
+
+        case "+":
+            return num1 + num2;
+
+        case "-":
+            return num1 - num2;
+
+        case "*":
+            return num1 * num2;
+
+        case "/":
+            if (num2 === 0) {
+                return "Error: no se puede dividir entre 0";
+            }
+            return num1 / num2;
+
+        default:
+            return "Error: operador no válido";
+    }
+}
+
+console.log(calculadora(10, 5, "+"));
+console.log(calculadora(10, 5, "-"));
+console.log(calculadora(10, 5, "*"));
+console.log(calculadora(10, 5, "/"));
 
 /**
  * TODO: EJERCICIO 2 - Tabla de Multiplicar
