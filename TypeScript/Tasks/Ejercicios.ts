@@ -203,8 +203,18 @@ mostrarDato(20.5);
  * - Crea una variable utilizando el enum.
  * - Imprime su valor.
  */
+console.log("==========EJERCICIO 6===========");
 
+enum EstadoPedido{
+    Pendiente,
+    EnProceso,
+    Enviado,
+    Entrgado
+}
 
+let estado: EstadoPedido = EstadoPedido.EnProceso;
+
+console.log(estado);
 /**
  * ==========================================================
  */
