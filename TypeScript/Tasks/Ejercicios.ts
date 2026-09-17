@@ -172,7 +172,19 @@ console.log("Empleado 2:", empleado2);
  * Si recibe un string deberá mostrarlo en mayúsculas (uso del toUpperCase).
  * Si recibe un número deberá mostrarlo con dos decimales (uso del toFixed).
  */
+console.log("======== EJERCICIO 5 - Union Types ========");
 
+function mostrarDato(dato: string | number): void {
+    if (typeof dato === "string") {
+        console.log(dato.toUpperCase());
+    } else {
+        console.log(dato.toFixed(2));
+    }   
+
+}
+
+mostrarDato("hola profesor");
+mostrarDato(20.5);
 
 /**
  * TODO: EJERCICIO 6 - Enums
