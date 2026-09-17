@@ -360,6 +360,42 @@ console.log(obtenerPrimero(valor));
  *
  * 6. Mostrar el arreglo final.
  */
+console.log("==========EJERCICIO 10===========");
 
+type Usuario = {
+    id: number;
+    nombre: string;
+    edad: number;
+    activo: boolean;
+};
+
+const usuarios: Usuario[] = [
+    {id: 12345, nombre: "Diego", edad: 20, activo:true},
+    {id: 67890, nombre: "Cristhian", edad: 22, activo:false},
+    {id: 54321, nombre: "Valentina", edad: 25, activo:true}
+];
+
+function agregarUsuarios(usuario: Usuario):void{
+    usuarios.push(usuario);
+}
+
+function buscarUsuario(id: number):Usuario | undefined{
+    return usuarios.find(usuarios => usuarios.id === id);
+}
+
+function mostrarUsuariosActivos():Usuario[]{
+    return usuarios.filter(usuarios => usuarios.activo)
+}
+
+agregarUsuarios({id: 98760, nombre: "Sara",edad: 15, activo:true });
+ 
+console.log("Usuario con ID 12345:")
+console.log(buscarUsuario(12345));
+
+console.log("Usuarios activos:")
+console.log(mostrarUsuariosActivos());
+
+console.log("Arreglo final:")
+console.log(usuarios);
 
 export {};
