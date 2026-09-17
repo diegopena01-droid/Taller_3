@@ -157,6 +157,8 @@ console.log("Promedio de ventas: " + promedioVentas);
  *  - Crear un arreglo únicamente con los títulos.
  */
 
+console.log("==========EJERCICIO 7===========");
+
 const libros = [
     {
         id: 1,
@@ -174,6 +176,16 @@ const libros = [
         disponible: true
     }
 ];
+
+const libroEncontrado = libros.find(libro => libro.id === 2);
+const librosDisponibles = libros.filter(libro => libro.disponible === true);
+const titulosLibros = libros.map(libro => libro.titulo);    
+
+console.log("Libro con id 2: ", libroEncontrado);
+console.log("Libros disponibles: ", librosDisponibles);
+console.log("Títulos de libros: ", titulosLibros);  
+
+
 
 /**
  * TODO: EJERCICIO 8 - Copias y Referencias
