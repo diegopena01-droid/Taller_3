@@ -302,7 +302,7 @@ console.log("==========EJERCICIO 8===========");
     const estudiante = new Estudiante("Diego Peña", 21, "ingenieria de sistemas");
 
     console.log(estudiante);
-    
+
 /**
  * TODO: EJERCICIO 9 - Generics
  *
@@ -318,7 +318,20 @@ console.log("==========EJERCICIO 8===========");
  * - Un arreglo de strings.
  * - Un arreglo de booleanos.
  */
+console.log("==========EJERCICIO 9===========");
 
+function obtenerPrimero<T>(arreglo: T[]):T{
+    return arreglo[0];
+}
+
+const Numeros: number[] = [10,20,30,40];
+console.log(obtenerPrimero(Numeros));
+
+const Nombres: string[] = ["Diego","Cristhian","Valentina"];
+console.log(obtenerPrimero(Nombres));
+
+const valor: boolean[] = [false,true,false];
+console.log(obtenerPrimero(valor));
 
 /**
  * TODO: EJERCICIO 10 - Sistema de Usuarios
