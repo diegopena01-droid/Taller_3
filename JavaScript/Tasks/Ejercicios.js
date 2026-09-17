@@ -200,10 +200,39 @@ console.log("Títulos de libros: ", titulosLibros);
  *  - Explica la diferencia entre ambos casos.
  */
 
+console.log("==========EJERCICIO 8===========");
+
+//copia por asignación
+
 const usuario = {
     nombre: "Carlos",
     edad: 30
 };
+
+const copiaAsignacion = usuario;
+copiaAsignacion.nombre = "Cristiano";
+
+console.log("Usuario original: ", usuario);
+console.log("Copia por asignación: ", copiaAsignacion);
+
+//copia por spread
+const usuario2 = {
+    nombre: "Carlos",
+    edad: 30
+};
+
+const copiaSpread = { ...usuario2 };
+copiaSpread.nombre = "Cristiano";
+
+console.log("Usuario original: ", usuario2);    
+console.log("Copia por spread: ", copiaSpread);
+
+/**
+ * Explicación:
+ * En el primer caso, al hacer la copia por asignación, tanto la variable usuario como copiaAsignacion apuntan al mismo objeto en memoria. Por lo tanto, al modificar el nombre en copiaAsignacion, también se modifica en usuario.
+ * En el segundo caso, al hacer la copia utilizando Spread, se crea un nuevo objeto en memoria. Por lo tanto, al modificar el nombre en copiaSpread, no afecta al objeto original usuario2.
+ */
+
 
 /**
  * TODO: EJERCICIO 9 - Desestructuración
