@@ -136,6 +136,29 @@ console.log("Producto 2:", producto2);
  */
 
 
+console.log("======== EJERCICIO 4 - Interfaces ========");
+
+interface Empleado {
+    nombre: string;
+    cargo: string;
+    salario: number;
+}
+
+const empleado1: Empleado = {
+    nombre: "Pepito",
+    cargo: "Desarrollador",
+    salario: 4000000,
+};
+
+const empleado2: Empleado = {
+    nombre: "Maluma",
+    cargo: "Chofer",
+    salario: 2500000,
+};
+
+console.log("Empleado 1:", empleado1);
+console.log("Empleado 2:", empleado2);
+
 /**
  * TODO: EJERCICIO 5 - Union Types
  *
