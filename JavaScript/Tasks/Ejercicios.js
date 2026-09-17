@@ -87,6 +87,8 @@ console.log(productos);
  *  - Agrega una nueva materia.
  *  - Muestra todas las propiedades utilizando Object.entries() (Investigar).
  */
+console.log("==========EJERCICIO 4===========");
+
 const estudiante = {
     nombre: "Laura",
     edad: 20,
@@ -96,6 +98,10 @@ const estudiante = {
         "Programación"
     ]
 };
+
+estudiante.edad = 21;
+estudiante.materias.push("Base de datos");
+console.log(Object.entries(estudiante));
 
 /**
  * TODO: EJERCICIO 5 - Filtrar Empleados
