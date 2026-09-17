@@ -66,8 +66,14 @@ tablaMultiplicar(2,15);
  *  - Eliminar el último elemento
  *  - Mostrar el arreglo final
  */
+console.log("==========EJERCICIO 3===========");
 
 const productos = ["Laptop", "Mouse", "Teclado"];
+
+productos.push("Monitor");
+productos.unshift("Audifonos");
+productos.pop();
+console.log(productos);
 
 /**
  * TODO: EJERCICIO 4 - Inventario de Estudiantes
