@@ -235,7 +235,31 @@ console.log(estado);
  *
  * Crea dos objetos utilizando la clase.
  */
+console.log("==========EJERCICIO 7===========");
 
+class Vehiculo {
+
+    marca: string;
+    modelo: string;
+
+    constructor(marca: string, modelo: string) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+    mostrarInformacion():void{
+    console.log("Marca: " + this.marca);
+    console.log("Modelo: " + this.modelo);
+
+    }
+}
+const vehiculo1 = new Vehiculo("Toyota","corolla");
+const vehiculo2 = new Vehiculo("Ford","Mustang");
+
+console.log("------Veiculo 1-------");
+vehiculo1.mostrarInformacion();
+console.log("------Veiculo 2-------");
+vehiculo2.mostrarInformacion();
 
 /**
  * TODO: EJERCICIO 8 - Herencia
