@@ -6,6 +6,7 @@
  * Tener en cuenta la division por 0
  * Ejemplo: calculadora(10, 5, "+"); -> Resultado esperado: 15 
  */
+console.log("==========EJERCICIO 1===========");
 
 function calculadora(num1, num2, operador) {
 
@@ -45,6 +46,16 @@ console.log(calculadora(10, 5, "/"));
  * Debe imprimir la tabla de multiplicar solicitada
  * Ejemplo: 2 y 15 -> Tabla de Multiplicar del 2 al 15
  */
+console.log("==========EJERCICIO 2===========");
+
+function tablaMultiplicar(numero, cantidad) {
+
+    for (let i = 1; i <= cantidad; i++) {
+        console.log(numero + " x " + i + " = " + (numero * i));
+    }
+}
+
+tablaMultiplicar(2,15);
 
 /**
  * TODO: EJERCICIO 3 - Gestión de Producto
